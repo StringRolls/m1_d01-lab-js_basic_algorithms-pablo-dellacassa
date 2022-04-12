@@ -64,7 +64,7 @@ Sed porttitor rhoncus nunc eu lacinia. Integer ultrices ex nibh, vitae posuere d
 let words = 0;
 let etCount = 0;
 
-// convertimos el párrafo en un array de palabras
+// We convert the parragraph into an array of words
 let splittedParagraph = lorem.split(' ');
 
 for (let i=0; i < splittedParagraph.length; i++) {
@@ -93,7 +93,7 @@ Create a new variable phraseToCheck and have it contain some string value. Write
 
 let phraseToCheck = "A man, a plan, a canal, Panama!";
 phraseToCheck = phraseToCheck.replace(/[ ,!.]/g, "").toLowerCase();
-
+console.log(phraseToCheck)
 let reversedString = phraseToCheck.split('').reverse().join('');
 
 if (phraseToCheck === reversedString) {
@@ -102,3 +102,4 @@ if (phraseToCheck === reversedString) {
 else {
   console.log('Not a palindrome');
 }
+
